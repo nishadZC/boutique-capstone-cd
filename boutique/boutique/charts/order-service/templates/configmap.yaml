@@ -11,5 +11,7 @@ metadata:
     app.kubernetes.io/version: "1.16.0"
     app.kubernetes.io/managed-by: Helm
 data:
-  {}
+  AUTH_SERVICE_URL: http://auth:80
+  DATABASE_URL: postgresql://WgNxLrW:63qeZuYh3wQ1blaG@boutique-db-prod.ca1smsmwkm6y.us-east-1.rds.amazonaws.com:5432/boutique?sslmode=require
+  PRODUCT_SERVICE_URL: http://product-service:80
 

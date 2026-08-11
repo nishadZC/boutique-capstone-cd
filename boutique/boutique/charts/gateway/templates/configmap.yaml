@@ -11,5 +11,9 @@ metadata:
     app.kubernetes.io/version: "1.16.0"
     app.kubernetes.io/managed-by: Helm
 data:
-  {}
+  AUTH_SERVICE_URL: http://auth:80
+  ORDER_SERVICE_URL: http://order-service:80
+  ORDERS_SERVICE_URL: http://orders:80
+  PRODUCTS_SERVICE_URL: http://product-service:80
+  USER_SERVICE_URL: http://user-service:80
 
