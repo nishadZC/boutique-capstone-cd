@@ -1,0 +1,26 @@
+---
+# Source: boutique/charts/frontend/templates/ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: boutique-frontend
+  labels:
+    helm.sh/chart: frontend-0.1.0
+    app.kubernetes.io/name: frontend
+    app.kubernetes.io/instance: boutique
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: "boutique.prod.tntk.paradisescubagoa.in"
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: boutique-frontend
+                port:
+                  number: 80
+

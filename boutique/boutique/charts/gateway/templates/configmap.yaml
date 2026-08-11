@@ -1,0 +1,15 @@
+---
+# Source: boutique/charts/gateway/templates/configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: boutique-gateway
+  labels:
+    helm.sh/chart: gateway-0.1.0
+    app.kubernetes.io/name: gateway
+    app.kubernetes.io/instance: boutique
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+data:
+  {}
+
