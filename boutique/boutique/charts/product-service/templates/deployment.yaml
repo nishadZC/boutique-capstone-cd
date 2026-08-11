@@ -32,7 +32,7 @@ spec:
                 name: boutique-product-service
           securityContext:
             {}
-          image: "368763425814.dkr.ecr.us-east-1.amazonaws.com/prod/product-service:cbd3204776fe612c7f58486f256762e2c241d90e"
+          image: "368763425814.dkr.ecr.us-east-1.amazonaws.com/prod/product-service:6f6aea1c5e323c38d3dae5a471b3539f47a80854"
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
