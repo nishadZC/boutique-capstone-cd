@@ -18,6 +18,8 @@ spec:
       app.kubernetes.io/instance: boutique
   template:
     metadata:
+      annotations:
+        restartedAt: "2026-08-11"
       labels:
         app.kubernetes.io/name: auth
         app.kubernetes.io/instance: boutique
@@ -32,7 +34,7 @@ spec:
                 name: boutique-auth
           securityContext:
             {}
-          image: "368763425814.dkr.ecr.us-east-1.amazonaws.com/prod/auth:6f6aea1c5e323c38d3dae5a471b3539f47a80854"
+          image: "368763425814.dkr.ecr.us-east-1.amazonaws.com/prod/auth:018778e4a739eb796afe8a394df323a078327244"
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
