@@ -34,7 +34,7 @@ spec:
                 name: boutique-orders
           securityContext:
             {}
-          image: "368763425814.dkr.ecr.us-east-1.amazonaws.com/prod/orders:e0603a384948991060a4e6fa5653024dd256bd65"
+          image: "368763425814.dkr.ecr.us-east-1.amazonaws.com/prod/orders:c5a6b3df8299022bc90a3e2bab7633f3a6cb6dc3"
           imagePullPolicy: IfNotPresent
           ports:
             - name: http

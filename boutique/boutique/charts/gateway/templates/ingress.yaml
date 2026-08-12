@@ -1,0 +1,28 @@
+---
+# Source: boutique/charts/gateway/templates/ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: boutique-gateway
+  labels:
+    helm.sh/chart: gateway-0.1.0
+    app.kubernetes.io/name: gateway
+    app.kubernetes.io/instance: boutique
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: "boutique.prod.tntk.paradisescubagoa.in"
+      http:
+        paths:
+          - path: /api(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: boutique-gateway
+                port:
+                  number: 80
+
