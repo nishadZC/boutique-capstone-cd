@@ -32,7 +32,7 @@ spec:
                 name: boutique-gateway
           securityContext:
             {}
-          image: "368763425814.dkr.ecr.us-east-1.amazonaws.com/prod/gateway:018778e4a739eb796afe8a394df323a078327244"
+          image: "368763425814.dkr.ecr.us-east-1.amazonaws.com/prod/gateway:863b6fe7d3a4d4bebafbb7ba9943b2ef77864ee3"
           imagePullPolicy: IfNotPresent
           ports:
             - name: http

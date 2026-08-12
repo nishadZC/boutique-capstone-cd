@@ -11,6 +11,6 @@ metadata:
     app.kubernetes.io/version: "1.16.0"
     app.kubernetes.io/managed-by: Helm
 data:
-  DATABASE_URL: postgresql://WgNxLrW:63qeZuYh3wQ1blaG@boutique-db-prod.ca1smsmwkm6y.us-east-1.rds.amazonaws.com:5432/boutique?sslmode=no-verify
+  DATABASE_URL: postgresql://bplOBle:BQjzZKgBCeNyv4Q%23@boutique-db-prod.ca1smsmwkm6y.us-east-1.rds.amazonaws.com:5432/boutique?sslmode=no-verify
   NODE_TLS_REJECT_UNAUTHORIZED: "0"
 
