@@ -34,7 +34,7 @@ spec:
                 name: boutique-auth
           securityContext:
             {}
-          image: "368763425814.dkr.ecr.us-east-1.amazonaws.com/prod/auth:6eae8900eb8c072f1e0072313f99a802f0cf9f59"
+          image: "368763425814.dkr.ecr.us-east-1.amazonaws.com/prod/auth:88e83f354205b95a766fb2de5e0ba8a53217e24f"
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
@@ -42,7 +42,7 @@ spec:
               protocol: TCP
           livenessProbe:
             httpGet:
-              path: /api/metrics
+              path: /health
               port: http
             initialDelaySeconds: 30
             periodSeconds: 10
@@ -50,7 +50,7 @@ spec:
             timeoutSeconds: 1
           readinessProbe:
             httpGet:
-              path: /api/metrics
+              path: /health
               port: http
           resources:
             {}

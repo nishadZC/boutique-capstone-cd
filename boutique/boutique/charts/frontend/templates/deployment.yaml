@@ -32,7 +32,7 @@ spec:
                 name: boutique-frontend
           securityContext:
             {}
-          image: "368763425814.dkr.ecr.us-east-1.amazonaws.com/prod/frontend:6eae8900eb8c072f1e0072313f99a802f0cf9f59"
+          image: "368763425814.dkr.ecr.us-east-1.amazonaws.com/prod/frontend:88e83f354205b95a766fb2de5e0ba8a53217e24f"
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
